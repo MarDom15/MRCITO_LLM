@@ -1,8 +1,11 @@
 from fastapi import FastAPI, HTTPException
 from langchain.chains import RetrievalQA
-from langchain.llms import OpenAI
-from langchain.vectorstores import FAISS
+#from langchain.llms import OpenAI
+#from langchain.vectorstores import FAISS
 from langchain_huggingface import HuggingFaceEmbeddings
+from langchain_community.llms import OpenAI
+from langchain_community.vectorstores import FAISS
+
 
 app = FastAPI()
 
